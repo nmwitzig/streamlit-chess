@@ -1,10 +1,10 @@
 seaborn
 matplotlib
-streamlit == 0.87
-pandas == 1.2.4
+streamlit
+pandas
 keybert
 flair
-click==8
+click
 chess
 onnx
 onnxruntime
