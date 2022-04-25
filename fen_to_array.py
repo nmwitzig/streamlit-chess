@@ -1,13 +1,7 @@
 #%%
 import re
-import chess
 import numpy as np
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.metrics import confusion_matrix
 import tensorflow as tf
-import ast
 
 
 

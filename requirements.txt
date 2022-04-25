@@ -7,5 +7,6 @@ flair
 click==8
 chess
 onnx
+onnxruntime
 numpy
-
+tensorflow

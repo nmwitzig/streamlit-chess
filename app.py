@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 from pandas import DataFrame
-from flair.embeddings import TransformerDocumentEmbeddings
 import seaborn as sns
 from functionforDownloadButtons import download_button
 import onnxruntime as rt
