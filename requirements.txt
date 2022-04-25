@@ -5,3 +5,7 @@ pandas == 1.2.4
 keybert
 flair
 click==8
+chess
+onnx
+numpy
+

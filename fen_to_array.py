@@ -115,7 +115,7 @@ def fenToVec(fenstr):
     previous_output = simple_fen_vec(*preproc_fen(fenstr))
     t = previous_output.transpose(1,2,0)
     # add one dimension for batch size
-    t = np.expand_dims(t, axis=0)
+    #t = np.expand_dims(t, axis=0)
     #t = np.expand_dims(t,axis=0)
     t = tf.cast(t, tf.float32)
     return t
