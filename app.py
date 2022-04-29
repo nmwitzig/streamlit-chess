@@ -12,6 +12,8 @@ import base64
 import chess
 import chess.svg
 
+st.set_page_config(layout="wide")
+
 #sess = rt.InferenceSession("model/chess-resnet.onnx")
 
 sess = rt.InferenceSession("model/chess-resnet.onnx")
