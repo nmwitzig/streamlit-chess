@@ -183,6 +183,8 @@ with st.form(key="my_form"):
             render_svg(fentovsg(doc[0]))
         else:
             render_svg(fentovsg(doc))
+    
+    st.write("\n")
 
 
 #st.markdown("## **🎈 Check & download results **")
