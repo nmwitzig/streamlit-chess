@@ -82,7 +82,7 @@ st.set_page_config(
 
 
 def _max_width_():
-    max_width_str = f"max-width: 1400px;"
+    max_width_str = f"max-width: 1900px;"
     st.markdown(
         f"""
     <style>
@@ -95,7 +95,7 @@ def _max_width_():
     )
 
 
-#_max_width_()
+_max_width_()
 
 c30, c31, c32 = st.columns([2.5, 1, 3])
 
