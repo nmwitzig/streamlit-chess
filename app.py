@@ -12,7 +12,6 @@ import base64
 import chess
 import chess.svg
 
-st.set_page_config(layout="wide")
 
 #sess = rt.InferenceSession("model/chess-resnet.onnx")
 
@@ -80,6 +79,7 @@ def rcnn_chess(fenstring='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0
 st.set_page_config(
     page_title="Chess Difficulty Prediction",
     page_icon="🎈",
+    layout="wide",
 )
 
 
