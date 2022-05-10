@@ -115,7 +115,7 @@ with st.expander("ℹ️ - About this app", expanded=True):
 -   This tool predicts the *difficulty*, for a given chess position.
 - It uses [FEN-Strings](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) to represent chess positions.
 - Use, e.g., the [Lichess Editor](https://lichess.org/editor) to create FEN-Strings.
-- The model is trained is a residual convolutional neural network, trained on approx. 2 mio. *professional* human chess games.
+- The model is trained is a residual convolutional neural network, trained on approx. 2 mio. evaluated *professional* human chess games. Both the engine evaluations and the training of the model were performed on the [MOGON2-architecture](https://hpc.uni-mainz.de).
 - The Output is a single number, which yields the *difficulty* of the position, measured in Expected Loss of CP (Centipawns).
 	    """
     )
