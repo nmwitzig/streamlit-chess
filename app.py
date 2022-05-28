@@ -1,4 +1,5 @@
 from operator import contains
+from requests import session
 import streamlit as st
 import numpy as np
 from pandas import DataFrame
@@ -11,6 +12,12 @@ import pandas as pd
 import base64
 import chess
 import chess.svg
+
+
+# set fen to session state
+
+if "fen" not in st.session_state:
+    st.session_state["fen"] = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
 
 #sess = rt.InferenceSession("model/chess-resnet.onnx")
@@ -132,12 +139,15 @@ col1, col2, col3,_ = st.columns([1, 1.15, 1, 2.25])
 with col1:
     if st.button("Draw Low Difficulty example"):
         fen = low_examples.sample(n=1).iloc[0][0]
+        st.session_state["fen"] = fen
 with col2:
     if st.button("Draw Medium Difficulty example"):
         fen = medium_examples.sample(n=1).iloc[0][0]
+        st.session_state["fen"] = fen
 with col3:
     if st.button("Draw High Difficulty example"):
         fen = high_examples.sample(n=1).iloc[0][0]
+        st.session_state["fen"] = fen
 
 with st.form(key="my_form"):
 
@@ -145,8 +155,9 @@ with st.form(key="my_form"):
     with c1:
         doc = st.text_input(
             "Paste your FEN-String below (max 1 at once)",
-            value=fen,
-        )
+            value=st.session_state["fen"],
+            key="fen",
+            )
         # check for new line
         if doc.count('\n') > 0:
         
