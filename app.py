@@ -45,8 +45,8 @@ def render_svg(svg):
     b64 = base64.b64encode(svg.encode('utf-8')).decode("utf-8")
     html = r'<img src="data:image/svg+xml;base64,%s" width="500" height="500"/>' % b64
     # adjust height and width
-    html = html.replace("width=\"500\"", "width=\"50%\"")
-    html = html.replace("height=\"500\"", "height=\"50%\"")
+    html = html.replace("width=\"500\"", "width=\"75%\"")
+    html = html.replace("height=\"500\"", "height=\"75%\"")
     st.write(html, unsafe_allow_html=True)
 
 scaler = pickle.load(open("model/mm_scaler_untilmove80_clipped500.pkl", "rb"))
