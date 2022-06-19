@@ -120,10 +120,10 @@ with st.expander("ℹ️ - About this app", expanded=True):
 
     st.write(
         """     
-- This tool predicts the *difficulty*, for a given chess position, measured as a single number in Expected Loss of CP (Centipawns).
+- This tool predicts the *difficulty* for a given chess position, measured as a single number in Expected Loss of CP (Centipawns).
 - It uses [FEN-Strings](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) to represent chess positions.
 - You can use, e.g., the [Lichess Editor](https://lichess.org/editor) to create FEN-Strings.
-- The model is trained is a residual convolutional neural network, trained on approx. 2 mio. evaluated *professional* human chess games. Both the engine evaluations and the training of the model were performed on the [MOGON2-architecture](https://hpc.uni-mainz.de).
+- The underlying model is a residual convolutional neural network and was trained on moves of approx. 2 mio. evaluated *professional* human chess games. Both the engine evaluations and the training of the model were performed on the [MOGON2-architecture](https://hpc.uni-mainz.de).
 - [Please reach out to us](mailto:niklas.witzig@uni-mainz.de) if you have any questions or suggestions.
 	    """
     )
@@ -241,3 +241,5 @@ with st.form(key="my_form"):
 
 #with c2:
 #    st.table(df)
+
+
