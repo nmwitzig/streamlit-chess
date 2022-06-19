@@ -43,7 +43,7 @@ def fentovsg(fen):
 def render_svg(svg):
     """Renders the given svg string."""
     b64 = base64.b64encode(svg.encode('utf-8')).decode("utf-8")
-    html = r'<img src="data:image/svg+xml;base64,%s" width="500" height="500"/>' % b64
+    html = r'<img src="data:image/svg+xml;base64,%s" width="50%" height="50%"/>' % b64
     # adjust height and width
     #html = html.replace('width="8"', 'width="50%"')
     st.write(html, unsafe_allow_html=True)
@@ -119,11 +119,11 @@ with st.expander("ℹ️ - About this app", expanded=True):
 
     st.write(
         """     
--   This tool predicts the *difficulty*, for a given chess position.
+- This tool predicts the *difficulty*, for a given chess position, measured as a single number in Expected Loss of CP (Centipawns).
 - It uses [FEN-Strings](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) to represent chess positions.
-- Use, e.g., the [Lichess Editor](https://lichess.org/editor) to create FEN-Strings.
+- You can use, e.g., the [Lichess Editor](https://lichess.org/editor) to create FEN-Strings.
 - The model is trained is a residual convolutional neural network, trained on approx. 2 mio. evaluated *professional* human chess games. Both the engine evaluations and the training of the model were performed on the [MOGON2-architecture](https://hpc.uni-mainz.de).
-- The Output is a single number, which yields the *difficulty* of the position, measured in Expected Loss of CP (Centipawns).
+- [Please reach out to us](mailto:niklas.witzig@uni-mainz.de) if you have any questions or suggestions.
 	    """
     )
 
