@@ -12,7 +12,7 @@ import pandas as pd
 import base64
 import chess
 import chess.svg
-
+import sklearn
 
 # set fen to session state
 

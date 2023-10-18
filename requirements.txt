@@ -7,3 +7,4 @@ onnx
 onnxruntime
 numpy
 tensorflow
+scikit-learn
