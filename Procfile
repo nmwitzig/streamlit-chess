@@ -1,1 +1,1 @@
-web: streamlit run app.py --logger.level=warning
+web: streamlit run app.py --logger.level=error
