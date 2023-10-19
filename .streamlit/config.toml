@@ -6,5 +6,5 @@ textColor = "#262730"
 font = "sans serif"
 
 [server]
-#fileWatcherType = "poll"
-#port = 80
+fileWatcherType = "poll"
+port = 80
