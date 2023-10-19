@@ -1,7 +1,7 @@
 #%%
 import re
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 
 
 
@@ -111,5 +111,7 @@ def fenToVec(fenstr):
     # add one dimension for batch size
     #t = np.expand_dims(t, axis=0)
     #t = np.expand_dims(t,axis=0)
-    t = tf.cast(t, tf.float32)
+    #t = tf.cast(t, tf.float32)
+    # as float 32 using numpy
+    t = t.astype(np.float32)
     return t
