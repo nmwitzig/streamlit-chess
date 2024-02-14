@@ -7,5 +7,5 @@ onnx
 onnxruntime
 numpy
 #tensorflow
-scikit-learn
-minimal
+#scikit-learn
+#minimal
